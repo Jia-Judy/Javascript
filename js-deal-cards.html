@@ -1,0 +1,118 @@
+<!docType html>
+
+
+<html>
+
+    <head>
+    
+        <style>
+            
+        </style>
+    
+    </head>
+    
+    
+    <body>
+    
+
+<!--Dealing out a deck of card to any number of players-->
+        
+        <div id="start"></div>
+        How many players? 
+        
+        <input id="players" type="number" min="1" max="5" value="3">
+        
+        <button id="btnDeal" type="button" onclick="startDeal()">Deal</button>
+        
+        <!--another way to make a button:
+            <input type="button" onclick="startDeal()" value="Deal">
+        -->
+        
+        <div id="output"></div>
+        
+    </body>
+    
+        <script>
+        
+//Exercise: Dealing out a deck of cards to any numbuer of players
+        
+        
+        var suits = ["hearts","spades","clubs","diams"];
+        var cardFace = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"];
+        var cards = [];
+        var players = [];
+        
+        function startDeal(){
+            
+            cards = [];
+            players = [];
+            var num = Number(document.getElementById("players").value);
+            for(var i = 0; i<num; i++){
+                players[i] = [];
+            } //loop 不同数量的玩家
+            buildCards();
+            console.log(cards);
+            shuffleCards(cards);
+            deal();
+            
+        }
+          
+        //（for (s in suits){}）:loop through items from suits and cardFace arraies.把两个array里的值，不重复的两两组合，用loop through两个array，然后再push
+        
+        function buildCards(){
+            
+            for (s in suits){  
+                var bgColor = (suits[s] == "diams" || suits[s] == "hearts") ? "red" : "black"; //ternary operation三值运算
+                for (c in cardFace){
+                    var card = {
+                        
+                        suit:suits[s],//making an object
+                        num:cardFace[c],
+                        bgColor:bgColor
+                    }
+                    
+                    cards.push(card);
+                }
+            }
+        }
+        
+        function shuffleCards(array){
+            for(var x=(array.length-1); x>0; x--){
+                var holder = Math.floor(Math.random()*(x+1));
+                var temp = array[x];
+                array[x] = array[holder];
+                array[holder] = temp;
+            }
+            
+            return array;
+        }
+        
+        function deal(){
+            
+            var num = players.length;
+            var output = document.getElementById("output");
+            var p = 0;
+            for (i=0;i<cards.length;i++){
+                
+                players[p].push(cards[i]);
+                p++;
+                if (p >= num){p = 0};
+            }
+            
+        for (i = 0; i < num; i++){
+            
+            output.innerHTML += "players: " + (i+1) + "<br>";
+            for (x = 0; x < players[i].length; x++) {
+                var p = players[i][x];
+                output.innerHTML += "<span style=\color:" + p.bgColor + "\">" + p.num + "&" + p.suit + ";</span>"; 
+            }
+        
+            output.innerHTML += "<br>";
+        }    
+            
+        }
+        
+    </script>
+</html>
+
+

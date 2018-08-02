@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+
+    <head>
+    
+        <title>Javascript</title>
+        
+    </head>
+
+
+
+    <body>
+   
+        <!--inline Javascript:not recommend to use inline Javascript-->
+
+        <button onclick="alert('Hi!')">Click me!</button>
+
+        <p id="text">Hello World!</p>
+        
+        <button id="myButton">Change text</button>
+        
+        
+        <p id="secondParagraph">Javascript is </p>
+        
+        <button id="secondButton">Append text</button>
+        
+        
+        <p id="thirdParagraph"> </p>
+        
+        <button id="thirdButton">button</button>
+        
+        
+        <p id="fourthParagraph">fourthParagraph</p>
+        
+        <button id="fourthbutton">turn</button>
+        
+        
+        <script type="text/javascript">
+            
+        /* Responding To A Click */
+            
+        
+            /* 点击按钮内容从跳出来在新窗口里显示 */
+            /*
+            document.getElementById("myButton").onclick = function(){
+            
+            alert("Button Clicked!");
+            
+            }
+            
+            /* 直接从html里改变内容 */
+            
+            /*
+            document.getElementById("text").innerHTML = "Hi Judy!";
+
+            */
+            
+        
+            /* 点击按钮换内容*/
+             
+             document.getElementById("myButton").onclick = function(){
+            
+             document.getElementById("text").innerHTML = "Hi Judy!";
+             
+            }
+            
+        /* Changing Website Content */
+            
+             document.getElementById("secondButton").onclick = function(){
+             document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "awesome.";
+                 
+             }
+            
+            
+             document.getElementById("thirdButton").onclick = function(){
+             document.getElementById("thirdParagraph").innerHTML = "<i>Coding is a big fun!</i>";
+                
+             }
+             
+        /* Manipulating Styles With Javascript */  
+             
+             document.getElementById("fourthbutton").onclick = function(){
+             document.getElementById("fourthParagraph").style.display = "inline";
+             
+            }
+             
+             
+        </script>
+        
+        <!--
+        
+        <script type="text/javascript">
+        
+            // One line comment
+            /*
+            
+            This is two lines comments
+            
+            */
+            
+            alert("Pages is loaded.");
+            
+            document.getElementById("text").innerHTML = "Hello Judy!"
+         
+        </script>
+
+        -->
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+    </body>
+
+</html>

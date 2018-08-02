@@ -1,0 +1,89 @@
+<!docType html>
+
+
+<html>
+
+    <head>
+    
+        <style>
+            
+        </style>
+    
+    </head>
+    
+    
+    <body>
+
+<!--Shuffle an array-->
+        
+        <div id="output"></div>
+        <input type="button" onclick="start()" value="Shuffle">
+         
+        
+    </body>
+        
+       
+    <script>
+ 
+ //shuffle an array: shuffle your items within an array
+        
+        var output = document.getElementById("output");
+        var names = ["joe","adam","esme","ross","simon","elain"];
+        
+        function start(){
+            
+            shuffle(names);//you have to add the name of an array, so that the array names will pass the value to the functon shuffle()
+            output.innerHTML += names + "<br>";
+            
+        }
+        
+        function shuffle(arr){
+            
+            for(var x=(arr.length-1); x>0; x--){
+                var holder = Math.floor(Math.random()*(x+1));// we are going to do the loop while x is larger than zero, there is no arr[0]?
+                var temp = arr[x];
+                arr[x] = arr[holder];//holder = 6 ? 
+                arr[holder] = temp;
+            }
+            
+            return arr;
+        }
+         
+         
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

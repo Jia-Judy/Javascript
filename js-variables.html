@@ -1,0 +1,499 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-variables</title>
+        
+        <style>
+        
+            .width {width:800px}
+        
+        </style>
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        
+        
+        <script type="application/javascript">
+            
+            /*var question = prompt("What is your name?");
+            var output = document.getElementById("output");
+            output.innerHTML += question;
+            
+            var output = document.getElementById('output')
+            var val = document.getElementById('val')
+            val.value = "hell0";
+            
+            // add console message
+            //console.log("%cHello World","color:white;background-color:black")
+            // add alert message
+            //alert("Hi Jia");
+            // add message
+            //document.write("Welcome");
+            //backslash to escape from speical characters 
+            /*var myString = "My \"world\'s 4\2";
+            var myNumber = 100;
+            var myBoolean = true;
+            var x = "my";
+            var question = "What is your Name?";
+            //var question2 = prompt("age/name");
+            //var question = question1 + question2 +"?";
+            var myName = prompt(question);
+            alert("Welcome to my Websit!" + " " + myName);
+            
+            
+           
+            var a = prompt("First Number");
+            var b = prompt("Second Number");
+            var myResult = Number(a)+Number(b);
+            alert(myResult);
+            
+            
+            var a = prompt("First Number");
+            var b = prompt("Second Number");
+            var myResult = (Number(a) >= Number(b))? "True":"False";
+            alert("a is greater than b is " + myResult);
+            
+            
+            var a = 3;
+            var b = 10;
+            var c = "5";
+            b++
+            var d = (b%5>0) ? "odd":"even";
+            
+            console.log(typeof a == "number");//why?
+            console.log(typeof c == typeof "number");
+            console.log((d=="odd" && b>10 && b >= (a*2))); 
+           
+            
+            
+            var myArray = ["string",200,false];
+            var myArray = new Array("string",200,false);
+            
+            
+            var task = ["Practice Yoga","Read 10 pages book","Study Web Developer"];
+            
+            var progress = ["Done","In Process","To do"];
+            
+            task[(task.length)] = "Play piano";
+            
+            var question1 = prompt("Which task? 1. Practive yoga; 2. Read 10 pages book; 3.Study web developer.");
+            var question2 = prompt("Which status? 1. Done; 2. In process; 3. To do.");
+            //var question2 = prompt("status 1 = done 2 = in process 3 = to do?");
+            alert("You are going to check task " + (task[(question1-1)])+ ". The status is " + (progress[(question2-1)])+ ".");
+            
+            
+            
+            //animal guessing game
+            
+            
+            
+            
+            
+            var food = ["orange","potato","rice","egg","noodle","hotpot"];
+            var foodIndex = (Math.floor(Math.random()*food.length));
+            var randomFood = food[foodIndex];
+            
+            var message = prompt("Which index number is " + randomFood + "?");
+            var result = (message-1 == foodIndex)? "Correct":"Wrong, it was " + foodIndex;
+            alert(result);
+           
+            
+            var animals=["cat","dog","pig","tiger","panther","snake"];
+            console.log(animals);
+            animals.sort();
+            animals.reverse();
+            
+            var randomIndex = Math.floor(Math.random()*animals.length);
+            var randomAnimal = animals[randomIndex];
+            var message = prompt("Which index number is " + randomAnimal + "?");
+            var result = (message == randomIndex)? "correct":"Wrong, it was " + randomIndex;
+            alert(result);*/
+            
+            /*
+            
+            // get the result: house,fish,fish,fish,fish,fish,fish,fish,rabbit,dog,sheep
+            
+            var newHolder = ["cat","dog","rabbit","bird"];
+            console.log(newHolder);
+            
+            
+            
+            newHolder[0]="horse";
+            newHolder[8]="rabbit";
+            newHolder[9]="bird";
+            newHolder[10]="sheep";
+            newHolder.fill("fish",1,8);
+            
+            
+            newHolder.shift();
+            newHolder.pop();
+            newHolder.unshift("Horse");
+            newHolder[8]="rabbit";
+            newHolder[9]="bird"; 
+            newHolder[10]="sheep";
+            newHolder.fill("fish",1,8);*/
+            
+            
+    // Looking for the animals and the postion of the animal.
+            
+            /*
+            var newHolder = ["cat","dog","rabbit","bird"];
+            console.log(newHolder);
+            
+            var question = prompt("Guess what animal do I have and which position is it?");
+            var posIndex = (question == "cat" || "dog" || "rabbit" || "bird")? "Correct! I do have " + question + ". The position is " + (newHolder.indexOf(question)+1) + ".":"Wrong! I don't have " + question + ".";
+            
+            alert(posIndex);
+            
+            
+            // Looking for a paticular animal.
+            
+            var newHolder = ["cat","dog","rabbit","bird"];
+            console.log(newHolder);
+            var question = prompt("What animal do you look for?");
+            var message = newHolder.indexOf(question);
+            var result = (message > -1)? "Found!":"Not found.";
+            alert(result);
+            
+            
+            var newHolder = ["cat","dog","rabbit","bird"];
+            console.log(newHolder);
+            newHolder.slice(1,3); 
+            
+            
+            //remove the item user choose
+            
+            var arr = ["1", "2", "5", "22", "44", "11", "66", "73", "cat","dog"];
+            arr.sort();
+            
+            var q = prompt("What do you want to remove?");
+            var finder = arr.indexOf(q);
+            
+            var v = (finder > -1)? arr.splice(finder,1):false;
+            
+            console.log(arr); 
+            
+            var array = [["cat", "dog", "snake"]];
+            console.log(array[0]);
+            console.log(array[0][1]); 
+            
+    //multimentional array
+            
+            var arr = [["joe","adam","esme","ross"],["2010","2017","2017","2017"]];
+            var q = prompt("Which friend?");
+            var message = alert("I met " + arr[0][q] + " in " + arr[1][q] + ".");
+            
+            
+    // loop array
+            var arr = ["1", "2", "5", "22", "44", "11", "66", "73", "cat","dog"];
+            for (var x in arr) {
+                
+                console.log(x);
+                console.log(arr[x]);
+            }
+            
+    //object 
+    //retrieve and update data
+            
+            var piano = {name:"littleflower",color:"black",price:"150",year:"2018"};
+            console.log(piano);
+            //piano.name = "xiaohua";
+            piano["name"] = "xiaohua";
+            var q = prompt("What do you want to know about this piano?");
+            var answer = piano[q];
+            alert(answer);
+            
+    //loop object
+            
+            var piano = {name:"littleflower",color:"black",price:"150",year:"2018"};
+            console.log(piano);
+            
+            for (var x in piano) {
+                
+                
+                console.log(x + ": " + piano[x]);
+                
+            } // var x in piano: means to loop through all items in piano array.
+            
+    //serveral objects in a array
+            
+            var Ryan = {age:27,hair:"blond",eyes:"blue",works:"lecturer"};
+            var Ben = {age:27,hair:"brown",eyes:"brown",works:"animal protector"};
+            var friends = {friend1:Ryan,friend2:Ben};
+            
+            friends.friend1["age"] = "28"; 
+            
+            var arr = ["1", "2", "5", "22", "44", "11", "66", "73", "cat","dog"];
+            for (var x in arr) {
+                
+                console.log(x);
+                console.log(arr[x]);
+            }
+            
+            console.dir(document);
+            
+            
+            
+        
+    //ternary operation三值运算
+            
+            var usernames = ["joe","jia","adam","esme"];
+            var question1 = prompt("What is your username?");
+            var result = usernames.indexOf(question1);
+            if (result > -1) {
+                 
+                output.innerHTML = "Found!" + question1;
+                var question2 = prompt("How old are you?");
+                var age = (question2 > 18)? "You are over 18 years old. Welcome! " : "You are not over 18 years old. Denied";
+                alert(age);
+                
+            } else {
+                
+                output.innerHTML = "Undefined!" + question1;
+            }
+            
+   //if conditional statement
+            
+            var currentTime = 11 
+            var output = document.getElementById("output");
+            
+            if (currentTime > 12) {
+                
+                output.innerHTML = "It is afternoon!"
+                    
+            } else {
+                
+                output.innerHTML = "It is morning!" 
+                
+            }
+            
+            
+            var contentWidth = document.getElementByclass("width");
+            var content = document.getElementById("output");
+            if (contentwidth > 700px) {
+                
+                content.style.display = none;
+                
+            } else {
+                
+                content.style.display = block;
+            }
+            
+            
+            // else if
+            
+            var myTime = prompt("what hour is it?");
+        
+            var output = document.getElementById("output");
+        
+            if(myTime >= 8 && myTime < 9){
+                
+                output.innerHTML = "Time to get up!";
+                
+            } else if (myTime >= 8 && myTime < 10) {
+                
+                output.innerHTML = "Time to practice yoga";
+            
+            } else if (myTime >= 10 && myTime < 12) {
+                
+                output.innerHTML = "Time to learn web developer";
+            
+            } else if (myTime >= 12 && myTime < 13) {
+                
+                output.innerHTML = "Time to have lunch";
+            
+            } else if (myTime >= 13 && myTime < 17) {
+                
+                output.innerHTML = "Time to learn web developer";
+            
+            } else {
+                
+                output.innerHTML = "You should be sleeping!";
+                
+            }
+            
+            
+            // switch statement
+            
+            var myTime = prompt("What time is it now?");
+            var html;
+            
+            switch (myTime) {
+                    
+                case "8":
+                    html = "Wake up time!";
+                case "12":
+                    html = "Lunch time!";
+                    
+                case "14":
+                    html = "Nap time";
+                    break;
+                    
+                default:
+                    html = "Another time";
+            }
+            
+            alert(html);
+            
+            
+            //switch statement practice
+            
+            var output = document.getElementById("output");
+            var question = prompt("Guess a number!");
+            var randomNumber = Math.floor(Math.random()*2);
+            var answer = "";
+            
+            switch (randomNumber) {
+                
+                case 0:
+    	 	     answer = “Red”;
+     		     break;
+
+	            case 1:
+    		     answer = “Green”;
+     		     break;
+
+	            default:
+                 answer = “Something went wrong!”
+                    
+
+            /* 
+            // Exercise: Guess either heads or tails?
+            
+            var html = "You are wrong!";
+            var question = prompt("Either heads or tails?");
+            var result = question == "heads" ? 1 : 0 ;
+            var randomNumber = Math.floor(Math.random()*2);
+            var game = result == randomNumber ? "You are right!" : "You are wrong!";
+            
+            alert(game);
+            
+            if (result = randomNumber) {
+                
+                html = "You are right!";
+                
+            } else {
+                
+                html = "You are wrong!";
+                
+            }
+            
+            output.innerHTML = html; */
+            
+            // rock paper and scissors?
+            
+            /*
+            var output = document.getElementById("output");
+            var player = prompt("Do you choose Rock, Paper or Scissors?") ;
+            var computer = Math.random();
+            var html = "";
+            var win = false;
+            
+            if (computer < 0.34) {
+                computer = "Rock";
+            }
+            else if (computer < 0.67) {
+                computer = "Paper";
+            }
+            else {
+                computer = "Scissors";
+            }
+            
+            
+            if (player == computer) {
+                
+                html = "Its a TIE!";
+                
+            } 
+            
+            else {
+                
+                if (player == "Paper") 
+                {
+                    
+                    if (computer == "Rock") 
+                    { 
+                        
+                        win = true;
+                    
+                    } 
+                }
+                
+                else if (player == "Rock") 
+                {
+                    
+                    if (computer == "Scissors")
+                    { 
+                        
+                        win = true;
+                    }
+                }
+                
+                else 
+                {
+                    
+                    if (computer == "Paper") 
+                    {
+                        
+                        win = true;
+                    }
+                }
+                
+            
+                if (win == true) 
+                {
+                
+                    html = "Player Win!";
+                
+                } 
+                else 
+                {
+                
+                    html = "Computer Win!";
+                
+                }
+            
+            }
+            
+            output.innerHTML = "You VS Computer <br> " + player + " VS " + computer +"<br>" + html;
+            
+            console.log(computer);
+            */
+        </script> 
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

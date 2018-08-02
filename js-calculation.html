@@ -1,0 +1,118 @@
+<!docType html>
+
+
+<html>
+
+    <head>
+    
+        <style>
+            
+        </style>
+    
+    </head>
+    
+    
+    <body>
+    
+        
+<!--javascript calculator-->
+        
+        First: <input type="text" id="numberOne">
+        Second: <input type="text" id="numberTwo">
+        <br>
+        Result: <div id="output"></div>
+        <input type="button" onclick="addBy()" value="Add">
+        <input type="button" onclick="subBy()" value="Substract">
+        <input type="button" onclick="mulBy()" value="Multiple">
+        <input type="button" onclick="divBy()" value="Divide"> 
+        
+        
+    </body>
+        
+       
+    <script>
+        
+//javascript calculator
+        
+        var output = document.getElementById("output");
+        var numberOne = document.getElementById("numberOne");
+        var numberTwo = document.getElementById("numberTwo");
+                
+        
+        function add()
+            {
+                var total = Number(numberOne.value) + Number(numberTwo.value);
+                output.innerHTML += numberOne.value + " + " + numberTwo.value + " = " + total + "<br>";
+            } 
+        
+        function addBy()
+            {
+                var a = numberOne.value + " + " + numberTwo.value;
+                var b = Number(numberOne.value) + Number(numberTwo.value);
+                myFun(a,b)
+            }
+        
+        function subBy()
+            {
+                var a = numberOne.value + " - " + numberTwo.value;
+                var b = Number(numberOne.value) - Number(numberTwo.value);
+                myFun(a,b)
+            }
+        
+        function mulBy()
+            {
+                var a = numberOne.value + " * " + numberTwo.value;
+                var b = Number(numberOne.value) * Number(numberTwo.value);
+                myFun(a,b)
+            }
+        
+        function divBy()
+            {
+                var a = numberOne.value + " / " + numberTwo.value;
+                var b = Number(numberOne.value) / Number(numberTwo.value);
+                myFun(a,b)
+            }
+             
+        
+        function myFun(a,b)
+            {
+                output.innerHTML += a + " = " + b + "<br>";
+            }
+   
+    </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

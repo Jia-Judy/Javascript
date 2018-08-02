@@ -1,0 +1,242 @@
+<!docType html>
+
+
+<html>
+
+    <head>
+    
+        <style>
+            
+            td {border:1px solid black}
+        
+        </style>
+    
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        
+        
+    </body>
+
+
+
+    <script>
+    
+       
+        
+// do loop
+       
+        /*
+        var output = document.getElementById("output");
+        var x = 0;//starting point
+        var y = prompt("How many rounds do you want to run?") // y is breaking point
+        do {
+             
+            output.innerHTML += "Value x = " + x + "<br>";
+            x++;
+        }
+    
+        
+        while (x<y);
+        
+        console.log(x);
+         
+        
+// while loop
+        
+        var output = document.getElementById("output");
+        var x = 0;
+        var y = prompt("How many rounds do you want to run?") // y is breaking point
+        
+        while (x<y) {
+          
+           output.innerHTML += "Value x = " + x + "<br>";
+            x++;//loop condition
+        }
+    
+         console.log(x);
+         
+        
+ 
+//do loop practice : list some even numbers
+        
+        var output = document.getElementById("output");
+        var x = 0;
+        
+        do {
+            
+                if (x % 2 == 0) 
+
+                {
+                    output.innerHTML += "It is a even number: "+ x + "<br>";
+                } 
+                
+                x++;
+
+           } 
+        
+        while (x<10);
+    
+        console.log(x);
+        
+        
+        
+//while loop practice: Guess the password 
+        
+        var typedPassword = prompt("Type in your password!"); //starting point
+        var originalPassword = 123456;//breaking point
+        
+        while (typedPassword != originalPassword) { 
+        
+            typedPassword = prompt("Type in your password!");//loop condition
+            
+        }
+        
+        alert("Login successfuly!");
+        
+        console.log(originalPassword); 
+        
+        
+//for loop: list some even numbers
+        
+        var output = document.getElementById("output");
+        for (x = 0;x < 10; x++)
+        
+            {
+            
+                if (x % 2 == 0) 
+
+                {
+                    output.innerHTML += "It is a even number: "+ x + "<br>";
+                }
+
+            } 
+        
+       console.log(x);
+        
+//for loop: list some odd numbers
+        
+        var output = document.getElementById("output");
+        for (x = 0;x <= 31; x++)
+        
+            {
+            
+                if (x % 2 != 0) // if x % 2 = 0, it will also continue to loop through the function, but there is no output.
+
+                {
+                    output.innerHTML += "It is a odd number: "+ x + "<br>";
+                }
+
+            } 
+        
+       console.log(x); 
+        
+// for loop excercise: banana calaries 
+        
+       var output = document.getElementById("output");    
+       var bananaCalaries = 89;
+       var bananaEaten = prompt("How many bananas have you had?");           
+       var x = 1;
+       var holder = "";    
+        
+       for (x=1;x<=bananaEaten;x++) {
+           
+           
+          holder = x > 1 ? "bananas" : "banana";  
+             
+          output.innerHTML += "If you had " + x + " " +holder+ ". You will get " + bananaCalaries*x+" calaries."+" <br>";    
+           
+       } 
+        
+//nested loop: build a table with a nested loop (using javascript to write html: very powerful!)
+        
+        var output =document.getElementById("output");
+        var html = "<table>";
+        
+        for (var row=0;row<10;row++)
+        {
+            
+            html += "<tr>";
+            
+                for (var col=0; col<5; col++) 
+                {
+                    
+                    html += "<td>Cell= " + ((col+1) + (row*5)) + "</td>";
+                }
+            
+            html += "</tr>";
+        }
+        
+        html += "</table>";
+        
+        output.innerHTML = html; 
+        
+//
+        
+        var output = document.getElementById("output");
+        var html = "";
+        
+        for (var x = 1; x < 1001; x++) 
+            
+            {
+                
+                if (x == 1000) {html += x*5 + " = "};
+                html += x*5 + " + ";
+                
+            }
+         
+        output.innerHTML = html; 
+        
+        
+        var output = document.getElementById("output");
+        var total = 0;
+        for(var x=0; x<1000; x++) 
+            {
+                if (x%5 === 0) 
+                    {
+                       total += x;
+                       output.innerHTML += "Value of x= " + x +". Subtotal = " + total + "<br>"    
+                    };
+            }
+         
+        output.innerHTML += "Total = " + total;
+        
+//loop and array
+        
+        var output = document.getElementById("output");
+        var userName = ["joe","jia","adam"];
+        
+        for (var x = (userName.length-1);x>=0;x--)
+            {
+                output.innerHTML += userName[x] + "<br>";   
+            }
+
+        for (value of userName)
+            {
+                output.innerHTML += value + "<br>";
+            }
+            
+//loop and objects ?
+        
+        
+        var output = document.getElementById("output");
+        var userNames = {a:"joe",b:"jia",c:"adam"};
+        for (var x in userNames)
+            {
+                output.innerHTML += x + " = " + userNames[x]+"<br>";
+            }
+         
+         
+        for (var value in document)     
+            {
+                output.innerHTML += value + " = " + document[value] + "<br>";
+            }
+            
+        */ 
+        
+    </script>
+</html>
+
