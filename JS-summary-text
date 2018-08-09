@@ -1,5 +1,6 @@
 
-your whole job of programming is identifying the problem and break it down into small pieces as possible. You solve the small problem and get the small solution, and combine the small solutions together to solve the big problem
+your whole job of programming is identifying the problem and break it down into small pieces as possible. 
+You solve the small problem and get the small solution, and combine the small solutions together to solve the big problem
 
 we can connect information, we can update information, we can pull back information from the document object
 
@@ -101,9 +102,6 @@ JavaScript arrays are used to store multiple values in a single variable. An arr
            array[0][2]=snake;
 
 
-
-
-
 Object
 DOM = document object model
 
@@ -181,8 +179,6 @@ you can access this variable;
 it is accessible;
 we have access to it;  
 
-
-
 4. no argument:
    1) new solution: assign a value to the argument; 
    2) old solution: use conditional statement to check the typeof == “undefined”, then assign a value for it. 
@@ -217,8 +213,6 @@ onclick: holding the button for a long time. This is action is going to happen i
 render 递交 decimal places/point 小数点位置 fraction 分数 dynamic=动态 index value =索引值
 backslash: “My \“English\’s”\”
 pull back, preprogram, built in
-
-
 
 
 
