@@ -1,0 +1,38 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-if-getelementByclass</title>
+        
+        <style>
+            .width {width:600px}
+        </style>
+        
+    </head>
+    
+        <div class="width">
+            <div id="output">Hello! World!</div>
+        </div>
+    
+    <body>
+    
+        <script type="application/javascript">
+             
+            var contentWidth = document.getElementByclass("width");
+            var content = document.getElementById("output");
+            if (contentWidth > 700px) {
+                
+                content.style.display = none;
+                
+            } else {
+                
+                content.style.display = block;
+            }
+            
+        </script> 
+        
+    </body>
+</html>
+

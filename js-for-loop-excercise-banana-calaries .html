@@ -1,0 +1,40 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-for-loop-excercise-banana-calaries </title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        <script type="application/javascript">
+             
+// for loop excercise: banana calaries 
+        
+       var output = document.getElementById("output");    
+       var bananaCalaries = 89;
+       var bananaEaten = prompt("How many bananas have you had?");           
+       var x = 1;
+       var holder = "";    
+        
+       for (x=1;x<=bananaEaten;x++) {
+           
+           
+          holder = x > 1 ? "bananas" : "banana";  
+             
+          output.innerHTML += "If you had " + x + " " +holder+ ". You will get " + bananaCalaries*x+" calaries."+" <br>";    
+           
+       } 
+        </script> 
+        
+    </body>
+</html>
+

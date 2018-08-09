@@ -1,0 +1,39 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-loop-and-array</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        <script type="application/javascript">
+             
+//loop and array
+        
+        var output = document.getElementById("output");
+        var userName = ["joe","jia","adam"];
+        
+        for (var x = (userName.length-1);x>=0;x--)
+            {
+                output.innerHTML += userName[x] + "<br>";   
+            }
+
+        for (value of userName)
+            {
+                output.innerHTML += value + "<br>";
+            }
+            
+        </script> 
+        
+    </body>
+</html>
+

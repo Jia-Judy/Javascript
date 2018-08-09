@@ -1,0 +1,43 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-Guess-either-heads-or-tails</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <script type="application/javascript">
+             
+// Exercise: Guess either heads or tails?
+            
+            var html = "You are wrong!";
+            var question = prompt("Either heads or tails?");
+            var result = question == "heads" ? 1 : 0 ;
+            var randomNumber = Math.floor(Math.random()*2);
+            var game = result == randomNumber ? "You are right!" : "You are wrong!";
+            
+            alert(game);
+            
+            if (result = randomNumber) {
+                
+                html = "You are right!";
+                
+            } else {
+                
+                html = "You are wrong!";
+                
+            }
+             
+        </script> 
+        
+    </body>
+</html>
+

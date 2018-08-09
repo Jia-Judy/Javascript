@@ -1,0 +1,41 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-for-loop-list-some-odd-numbers</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        <script type="application/javascript">
+             
+//for loop: list some odd numbers
+        
+        var output = document.getElementById("output");
+        for (x = 0;x <= 31; x++)
+        
+            {
+            
+                if (x % 2 != 0) // if x % 2 = 0, it will also continue to loop through the function, but there is no output.
+
+                {
+                    output.innerHTML += "It is a odd number: "+ x + "<br>";
+                }
+
+            } 
+        
+       console.log(x); 
+            
+        </script> 
+        
+    </body>
+</html>
+

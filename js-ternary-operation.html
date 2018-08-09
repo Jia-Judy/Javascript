@@ -1,0 +1,40 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-alert</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <script type="application/javascript">
+             
+//ternary operation三值运算
+            
+            var usernames = ["joe","jia","adam","esme"];
+            var question1 = prompt("What is your username?");
+            var result = usernames.indexOf(question1);
+            if (result > -1) {
+                 
+                output.innerHTML = "Found!" + question1;
+                var question2 = prompt("How old are you?");
+                var age = (question2 > 18)? "You are over 18 years old. Welcome! " : "You are not over 18 years old. Denied";
+                alert(age);
+                
+            } else {
+                
+                output.innerHTML = "Undefined!" + question1;
+            }
+            
+        </script> 
+        
+    </body>
+</html>
+

@@ -1,0 +1,54 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-for-loop-practices</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <div id="output"></div>
+        <script type="application/javascript">
+             
+//
+        
+        var output = document.getElementById("output");
+        var html = "";
+        
+        for (var x = 1; x < 1001; x++) 
+            
+            {
+                
+                if (x == 1000) {html += x*5 + " = "};
+                html += x*5 + " + ";
+                
+            }
+         
+        output.innerHTML = html; 
+        
+        
+        var output = document.getElementById("output");
+        var total = 0;
+        for(var x=0; x<1000; x++) 
+            {
+                if (x%5 === 0) 
+                    {
+                       total += x;
+                       output.innerHTML += "Value of x= " + x +". Subtotal = " + total + "<br>"    
+                    };
+            }
+         
+        output.innerHTML += "Total = " + total;
+            
+        </script> 
+        
+    </body>
+</html>
+

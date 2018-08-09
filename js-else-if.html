@@ -1,0 +1,57 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-else-if</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+        <div id="output"></div>
+    
+        <script type="application/javascript">
+             
+    // else if
+            
+            var myTime = prompt("what hour is it?");
+        
+            var output = document.getElementById("output");
+        
+            if(myTime >= 8 && myTime < 9){
+                
+                output.innerHTML = "Time to get up!";
+                
+            } else if (myTime >= 8 && myTime < 10) {
+                
+                output.innerHTML = "Time to practice yoga";
+            
+            } else if (myTime >= 10 && myTime < 12) {
+                
+                output.innerHTML = "Time to learn web developer";
+            
+            } else if (myTime >= 12 && myTime < 13) {
+                
+                output.innerHTML = "Time to have lunch";
+            
+            } else if (myTime >= 13 && myTime < 17) {
+                
+                output.innerHTML = "Time to learn web developer";
+            
+            } else {
+                
+                output.innerHTML = "You should be sleeping!";
+                
+            }
+            
+        </script> 
+        
+    </body>
+</html>
+

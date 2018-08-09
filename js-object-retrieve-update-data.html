@@ -1,0 +1,33 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-object-retrieve-update-data</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+    
+        <script type="application/javascript">
+             
+ //retrieve and update data
+            
+            var piano = {name:"littleflower",color:"black",price:"150",year:"2018"};
+            console.log(piano);
+            //piano.name = "xiaohua";
+            piano["name"] = "xiaohua";
+            var q = prompt("What do you want to know about this piano?");
+            var answer = piano[q];
+            alert(answer);
+            
+        </script> 
+        
+    </body>
+</html>
+

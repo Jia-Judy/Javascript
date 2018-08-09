@@ -1,0 +1,42 @@
+
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>js-do-loop</title>
+        
+        <style>
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+        <div id="output"></div>
+    
+        <script type="application/javascript">
+             
+// do loop
+       
+        var output = document.getElementById("output");
+        var x = 0;//starting point
+        var y = prompt("How many rounds do you want to run?") // y is breaking point
+        do {
+             
+            output.innerHTML += "Value x = " + x + "<br>";
+            x++;
+        }
+    
+        
+        while (x<y);
+        
+        console.log(x);
+         
+            
+        </script> 
+        
+    </body>
+</html>
+
